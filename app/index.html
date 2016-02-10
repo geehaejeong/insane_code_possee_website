@@ -19,16 +19,18 @@
 
   <!-- App Controllers -->
   <script type="text/javascript" src="app.js"></script>
-  <script type="text/javascript" src="site/controllers/shop.ctrl.js"></script>
-  <script type="text/javascript" src="site/controllers/admin.ctrl.js"></script>
+  <!-- <script type="text/javascript" src="site/controllers/shop.ctrl.js"></script> -->
+  <script type="text/javascript" src="site/controllers/adminCtrl.js"></script>
   <script type="text/javascript" src="site/controllers/LoginCtrl.ctrl.js"></script>
-  <script type="text/javascript" src="site/controllers/product.ctrl.js"></script>
+  <script type="text/javascript" src="site/controllers/productCtrl.ctrl.js"></script>
 
   <!-- App Services -->
   <script type="text/javascript" src="site/services/api.srv.js"></script>
   <script type="text/javascript" src="site/services/products.srv.js"></script>
 </head>
 <body ng-model="shopApp">
+
+  <div ui-view class="wrapper"></div>
 
 </body>
 </html>
