@@ -58,6 +58,7 @@ angular
       url:'/auth',
       templateUrl:'site/partials/login-main.html',
       controller:'LoginCtrl as ctrl',
+
     });
 
 
