@@ -10,7 +10,7 @@
         //constants
         this.BASE_URL = 'http://localhost:8080/api';
         this.request = ApiRequest;
-        this.formatData = formatGetData;
+        this.formatGetData = formatGetData;
         this.serialize = serializeData;
 
 
