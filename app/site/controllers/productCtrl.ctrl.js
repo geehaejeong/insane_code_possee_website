@@ -7,7 +7,9 @@
     function ProductCtrl($stateParams, api, productSrv) {
         var ctrl = this
         ctrl.productSrv = productSrv;
-
+        ctrl.addProduct= addProduct;
+        ctrl.updateProduct=updateProduct;
+        ctrl.deleteProduct=deleteProduct;
         ctrl.categories = [{
             label: 'Shirts',
             value: 'shirts'
@@ -60,6 +62,7 @@
                 price: ctrl.price,
                 status: true,
             }
+            console.log('about to submit product');
             ctrl.productSrv.addProduct(product);
         }
 
