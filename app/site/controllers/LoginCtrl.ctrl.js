@@ -14,7 +14,6 @@
         ctrl.login = login;
 
 
-
         function login() {
 
             var payload = {
