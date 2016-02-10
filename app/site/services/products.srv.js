@@ -10,6 +10,7 @@
         this.api = api;
         this.state = $state;
         this.products = [];
+        
         //methods
         this.getProducts = getProducts;
         this.addProduct = addProduct;
