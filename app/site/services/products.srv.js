@@ -10,7 +10,7 @@
         this.api = api;
         this.state = $state;
         this.products = [];
-        
+
         //methods
         this.getProducts = getProducts;
         this.addProduct = addProduct;
@@ -40,7 +40,7 @@
             var _this = this;
             this.api.request('/products', product, 'POST')
                 .then(function(res) {
-                    console.log(res);
+                    console.log('hi',res);
                     if (res.status === 200) {
                         //product was added successfully
                         _this.products.push(res.data.product);
