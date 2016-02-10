@@ -1,7 +1,7 @@
 (function() {
     angular
         .module('shopApp')
-        .controller('AdminCtrl', AdminController);
+        .controller('AdminCtrl', AdminCtrl);
 
 function AdminCtrl($scope,$state,products,productSrv){
 	var ctrl = this;
