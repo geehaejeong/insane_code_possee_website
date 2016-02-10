@@ -15,7 +15,12 @@ angular
       	.state('shop',{
       		url:'/',
       		templateUrl:'site/partials/shop-main.html',
-      		controller:'',
+      		controller:'ShopCtrl as ctrl',
+          resolve:{
+            products:function(productSrv){
+              return productSrv.getProducts();
+            }
+          }
       	});
 
 
@@ -51,7 +56,7 @@ angular
 
     .state('auth',{
       url:'/auth',
-      templateUrl:'site/partials/auth-main.html',
+      templateUrl:'site/partials/login-main.html',
       controller:'LoginCtrl as ctrl',
     });
 
