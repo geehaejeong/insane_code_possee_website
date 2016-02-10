@@ -7,7 +7,7 @@
         var ctrl = this;
         ctrl.api = api;
         ctrl.$state = $state;
-
+        ctrl.auth_btn='Continue';
         ctrl.password = null;
         ctrl.email = null;
 
