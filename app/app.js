@@ -51,7 +51,7 @@ angular
 
     .state('auth',{
       url:'/auth',
-      templateUrl:'site/partials/auth-main.html',
+      templateUrl:'site/partials/login-main.html',
       controller:'LoginCtrl as ctrl',
     });
 
