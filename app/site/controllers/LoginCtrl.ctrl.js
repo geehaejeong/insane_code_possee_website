@@ -14,7 +14,7 @@
         ctrl.login = login;
 
 
-
+        console.log('hellloo');
         function login() {
 
             var payload = {
