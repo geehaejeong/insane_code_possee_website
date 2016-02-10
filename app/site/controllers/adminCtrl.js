@@ -41,4 +41,4 @@ function AdminCtrl($scope,$state,products,productSrv){
 
 
 }
-
+})();
