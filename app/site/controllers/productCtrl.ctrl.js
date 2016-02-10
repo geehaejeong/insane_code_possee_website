@@ -1,11 +1,12 @@
 (function() {
+    
     angular
         .module('ProductCtrl')
         .controller('ProductCtrl', ProductCtrl);
 
-function ProductCtrl($stateParams,api,productSrv){
-	var ctrl = this
-	ctrl.productSrv = productSrv;
+	function ProductCtrl($stateParams,api,productSrv){
+		var ctrl = this
+		ctrl.productSrv = productSrv;
 
 	ctrl.categories = [
 		{label:'Shirts',value:'shirts'},
@@ -36,8 +37,7 @@ function ProductCtrl($stateParams,api,productSrv){
 
 
 }
-
-ProductCtrl.prototype.addProduct = function(){
+ function addProduct (){
 	var ctrl = this;
 	//TODO #2
 	//create product object, pass to plugin service
@@ -54,7 +54,7 @@ ProductCtrl.prototype.addProduct = function(){
 	ctrl.productSrv.addProduct(product);
 }
 
-ProductCtrl.prototype.updateProduct = function(){
+ function updateProduct(){
 	var ctrl = this;
 	ctrl.product_update_btn ="Updating";
 	ctrl.productSrv.updateProduct(ctrl.product, ctrl.product.id)
@@ -65,7 +65,7 @@ ProductCtrl.prototype.updateProduct = function(){
 	
 }
 
-ProductCtrl.prototype.deleteProduct = function(){
+function deleteProduct(){
 	var ctrl = this;
 	ctrl.product_delete_btn="Deleting";
 	ctrl.productSrv.deleteProduct(ctrl.product.id);
@@ -74,7 +74,8 @@ ProductCtrl.prototype.deleteProduct = function(){
 	//TODO #2
 	//remove product, pass to plugin service
 	//update text in button
+	ß}
 }
 
-
+})();
 
