@@ -19,8 +19,8 @@
 
             var payload = {
 
-                email: ctrl.email;
-                password: ctrl.password;
+                email: ctrl.email,
+                password: ctrl.password
             }
 
             ctrl.api.request('/users/login', payload, 'POST')
