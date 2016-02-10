@@ -45,7 +45,7 @@ angular
     .state('admin.add_product',{
       url:'/add_product',
       controller:'ProductCtrl as ctrl',
-      templateUrl:'site/partials/admin-add-product.html'
+      templateUrl:'site/partials/admin-addproduct.html'
     })
 
     .state('admin.edit_product',{
