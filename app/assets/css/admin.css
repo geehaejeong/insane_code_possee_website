@@ -90,4 +90,14 @@ width: 100%;
   left: 32%;
 }
 
+/*ADMIN ENDS*/
+
+/*ADD PRODUCT BEGINS*/
+
+.product-frm input,textarea {
+  width: 400px;
+  height: 30px;
+}
+
+
 
