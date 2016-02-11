@@ -49,22 +49,45 @@ h2 {
 
 .head1 {
 background-color: black;
-position: absolute;
+position: fixed;
 width: 100%;
 }
 
 .head1 h3 {
   text-align: right;
+  font-family: 'Lobster', cursive; 
 }
 
 .nav-panel{
-  position: absolute;
+  position: fixed;
   float: left;
   background-color: white;
   width: 20%;
   height: 100%;
   top: 56px;
   
+}
+
+.nav-panel h3, ul {
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
+  list-style: none;
+  padding: 20px;
+}
+
+.nav-panel li {
+  padding: 10px;
+}
+.nav-panel a {
+  padding: 10px;
+  color: grey;
+}
+
+.main-content {
+  position: fixed;
+  top: 25%;
+  left: 32%;
 }
 
 
