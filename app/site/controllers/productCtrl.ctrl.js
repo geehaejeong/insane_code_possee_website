@@ -51,7 +51,7 @@
         function addProduct() {
             var ctrl = this;
             //TODO #2
-            //create product object, pass to plugin service
+            //create product object, pass to product service
             //Update text in button
             var product = {
                 name: ctrl.name,
@@ -60,7 +60,7 @@
                 category: ctrl.category,
                 quantity: ctrl.quantity,
                 price: ctrl.price,
-                status: true,
+                status: 'active',
             }
             console.log('about to submit product');
             ctrl.productSrv.addProduct(product);
@@ -72,7 +72,7 @@
             ctrl.productSrv.updateProduct(ctrl.product, ctrl.product.id)
 
             //TODO #2
-            //create product object, pass to plugin service
+            //create product object, pass to product service
             //Update text in button
 
         }
@@ -84,7 +84,7 @@
 
 
             //TODO #2
-            //remove product, pass to plugin service
+            //remove product, pass to product service
             //update text in button
         }
     }

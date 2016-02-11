@@ -38,7 +38,7 @@
 
         function addProduct(product) {
             var _this = this;
-            this.api.request('/products', product, 'POST')
+            this.api.request('/products', product, 'PUT')
                 .then(function(res) {
                     console.log('hi',res);
                     if (res.status === 200) {
@@ -52,7 +52,7 @@
 
         function updateProduct(product, productId) {
             var _this = this;
-            this.api.request('/products/' + productId, product, 'PUT')
+            this.api.request('/products/' + productId, product, 'POST')
                 .then(function(res) {
                     console.log(res);
                     if (res.status === 200) {
