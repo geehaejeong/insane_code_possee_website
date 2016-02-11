@@ -1,9 +1,10 @@
+/*LOGIN PAGE*/
 body {
   background: url(../img/green_gobbler.png);
   font-family: 'Cabin', sans-serif;
 }
 
-h1 {
+h2 {
   font-family: 'Lobster', cursive;
   font-size: 60px;
 }
@@ -39,4 +40,31 @@ h1 {
 .btn-md:hover{
   background: grey;
 }
+
+/*LOGIN PAGE ENDS*/
+
+/*ADMIN BEGINS*/
+
+
+
+.head1 {
+background-color: black;
+position: absolute;
+width: 100%;
+}
+
+.head1 h3 {
+  text-align: right;
+}
+
+.nav-panel{
+  position: absolute;
+  float: left;
+  background-color: white;
+  width: 20%;
+  height: 100%;
+  top: 56px;
+  
+}
+
 
