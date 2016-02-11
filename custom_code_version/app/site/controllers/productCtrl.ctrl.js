@@ -11,7 +11,6 @@
             ctrl.productSrv = productSrv;
             ctrl.$state=$state;
             ctrl.addProduct = addProduct;
-            var product = {};
 
             ctrl.categories = [{
             label: 'Shirts',
@@ -29,7 +28,7 @@
             label: 'Accessories',
             value: 'accessories'
         }, ];
-        
+
 
             function addProduct() {
                 var product = {
