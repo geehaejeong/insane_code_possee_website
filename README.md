@@ -12,7 +12,7 @@ Then running:
 	bower install
 
 To start server from root folder (go back a folder with cd ../) with : 
-	node api/server.js
+	node server.js
 
 
 Initialize Admin Account:
