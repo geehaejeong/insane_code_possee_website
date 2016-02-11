@@ -86,7 +86,7 @@ width: 100%;
 
 .main-content {
   position: fixed;
-  top: 25%;
+  top: 15%;
   left: 32%;
 }
 
@@ -94,10 +94,21 @@ width: 100%;
 
 /*ADD PRODUCT BEGINS*/
 
-.product-frm input,textarea {
+.product-frm input {
   width: 400px;
   height: 30px;
 }
+.product-frm textarea {
+  width: 400px;
+  height: 150px;
+}
+.product-frm label {
+  display: block;
+}
+
+
+/*ADD PRODUCT ENDS*/
+
 
 
 
