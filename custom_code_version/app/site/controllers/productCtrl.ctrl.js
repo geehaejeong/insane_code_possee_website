@@ -13,21 +13,18 @@
             ctrl.addProduct = addProduct;
 
             ctrl.categories = [{
-            label: 'Shirts',
-            value: 'shirts'
+            label: 'Pens',
+            value: 'pens'
         }, {
-            label: 'Pants',
-            value: 'pants'
+            label: 'Pencils',
+            value: 'pencils'
         }, {
-            label: 'Shoes',
-            value: 'shoes'
+            label: 'Planners',
+            value: 'planners'
         }, {
-            label: 'Outerwear',
-            value: 'outerwear'
-        }, {
-            label: 'Accessories',
-            value: 'accessories'
-        }, ];
+            label: 'Notebooks',
+            value: 'notesbooks'
+        } ];
 
 
             function addProduct() {
@@ -43,5 +40,9 @@
 
                 ctrl.productSrv.addProduct(product);
             }
+
+
+      
         }
     })();
+
