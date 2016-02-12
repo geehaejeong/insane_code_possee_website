@@ -27,7 +27,15 @@ app.config(function($stateProvider, $httpProvider,$urlRouterProvider){
 
   .state('admin.dash',{
     url:'/dash',
-    templateUrl:'site/partials/dash.html'
+    templateUrl:'site/partials/dash.html',
+    
+    resolve: {
+      products: function(productSrv){
+        console.log('dash')
+        return productSrv.getProducts();
+      }
+    }
+    
   })
   .state('admin.add_product',{
     url:'/add_product',
