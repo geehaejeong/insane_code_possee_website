@@ -23,7 +23,7 @@
             value: 'planners'
         }, {
             label: 'Notebooks',
-            value: 'Notesbooks'
+            value: 'notesbooks'
         } ];
 
 
@@ -42,9 +42,7 @@
             }
 
 
-            function addToCart(product){
-                 ctrl.productSrv.addToCard(product);
-                
-            }
+      
         }
     })();
+

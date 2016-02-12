@@ -14,7 +14,7 @@
 
         	
             function addToCard(product){
-                cart(ctrl.product.id)
+                cart(ctrl.product.id, ctrl.product.quantity)
             }
 
         }
