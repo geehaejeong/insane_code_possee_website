@@ -11,7 +11,7 @@
             ctrl.productSrv = productSrv;
             ctrl.$state=$state;
             ctrl.addProduct = addProduct;
-
+            
             ctrl.categories = [{
             label: 'Pens',
             value: 'pens'
@@ -44,5 +44,10 @@
 
       
         }
+<<<<<<< HEAD
+
+    })();
+=======
     })();
 
+>>>>>>> master
