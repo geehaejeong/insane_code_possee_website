@@ -11,7 +11,7 @@
             ctrl.productSrv = productSrv;
             ctrl.$state=$state;
             ctrl.addProduct = addProduct;
-
+            
             ctrl.categories = [{
             label: 'Shirts',
             value: 'shirts'
@@ -44,4 +44,5 @@
                 ctrl.productSrv.addProduct(product);
             }
         }
+
     })();
