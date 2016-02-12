@@ -13,7 +13,9 @@
         	var cart=[];
 
         	
-
+            function addToCard(product){
+                cart(ctrl.product.id)
+            }
 
         }
 
