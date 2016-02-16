@@ -14,6 +14,7 @@
         ctrl.updateProduct = updateProduct;
         ctrl.passProduct = passProduct;
         ctrl.enable = false;
+        ctrl.product = {};
 
 
 
