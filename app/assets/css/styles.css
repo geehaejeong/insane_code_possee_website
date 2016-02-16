@@ -55,13 +55,12 @@ html{
     height: 450px;
     background-repeat: no-repeat;
     background-size: auto;
+    margin-top: 50px;
 }
 
-hr, {
-  border: solid rgba(0,0,0,.3) 0.1px;
-}
 
-/*PRODUCT NAV*/
+
+/*CATEGORY NAV*/
 .category-nav li{
   width: 19%;
   display: inline-block;
@@ -79,8 +78,11 @@ hr, {
 
 /*LOGO*/
 .logo {
+  margin: 60px 0 30px 0;
   text-align: center;
-  width: 50px;
+}
+.logo img{
+  width: 200px;
 }
 
 
@@ -102,6 +104,7 @@ hr, {
 .product-name{
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 50%;
 }
 .product-name h3{
   font-size: 14px;
