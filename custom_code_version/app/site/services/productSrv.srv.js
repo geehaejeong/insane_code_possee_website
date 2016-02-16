@@ -15,6 +15,7 @@
     	this.getProducts=getProducts;
     	this.addProduct=addProduct;
 
+
     	function getProducts(){
     		var srv=this;
     		return this.api.request('/products',{},'GET')
@@ -25,13 +26,16 @@
     	}
 
     	function addProduct(product){
-    		var srv=this;
+            var srv=this;
     		this.api.request('/products',product,'POST')
     		.then(function(response){
+                console.log('adding');
     			srv.products.push(response.data.product);
     			srv.$state.go('admin.dash');
     		});
     	}
+
+   
 
     }
 
