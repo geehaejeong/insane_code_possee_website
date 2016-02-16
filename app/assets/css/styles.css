@@ -127,3 +127,10 @@ hr, {
   padding-left: 50px;
   height: 150px;
 }
+.social i{
+  padding: 5px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+
