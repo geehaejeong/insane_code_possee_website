@@ -1,29 +1,51 @@
 (function() {
-	'use strict'
+    'use strict'
 
-	angular
-		.module('shopApp')
-		.controller('AdminCtrl', AdminCtrl);
-
-
-	function AdminCtrl(products,$state,productSrv,api){
-		var ctrl=this;
-		ctrl.api=api;
-		ctrl.products=products;
-		ctrl.$state=$state;
-		ctrl.productSrv=productSrv;
-		        this.deleteProduct = deleteProduct;
+    angular
+        .module('shopApp')
+        .controller('AdminCtrl', AdminCtrl);
 
 
-		     function deleteProduct(productId) {
-            console.log(productId);
-            var ctrl = this;
-            // var productId = product.id;
-            ctrl.api.request('/products/'+productId,{},'DEL');
-            ctrl.$state.go('admin.dash');
+    function AdminCtrl($state, productSrv, $stateParams, $scope) {
+        var ctrl = this;
 
-        	}
+        ctrl.$state = $state;
+        ctrl.productSrv = productSrv;
+        ctrl.updateProduct = updateProduct;
+        ctrl.passProduct = passProduct;
+        ctrl.enable = false;
 
 
-	}
+
+        $scope.$watch(function() {
+            return ctrl.productSrv.products;
+        }, function() {
+
+            ctrl.products = ctrl.productSrv.products;
+
+        });
+
+
+
+        function passProduct(product) {
+            ctrl.product = product;
+            console.log(product);
+            ctrl.$state.go('admin.edit');
+        }
+
+        function updateProduct() {
+            var product = {
+                name: ctrl.product.name,
+                image: ctrl.product.image,
+                description: ctrl.product.description,
+                category: ctrl.product.cateogry,
+                price: ctrl.product.price,
+                quantity: ctrl.product.quantity,
+                id: ctrl.product.id
+            }
+
+            ctrl.productSrv.updateProduct(product);
+        }
+
+    }
 })();
