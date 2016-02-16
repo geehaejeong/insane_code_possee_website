@@ -14,7 +14,10 @@
         ctrl.categories = ctrl.productSrv.categories;
         ctrl.products = products;
         ctrl.$uibModal = $uibModal;
+<<<<<<< HEAD
         ctrl.product = {};
+=======
+>>>>>>> ef2edb6d167b190aedd73e05ce515c54e63576bc
 
         ctrl.cart = [];
         ctrl.animationsEnabled = true;

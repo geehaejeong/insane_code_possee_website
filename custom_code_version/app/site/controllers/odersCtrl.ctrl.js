@@ -11,7 +11,15 @@
         	ctrl.api=api;
 
         	ctrl.cart=[];
+<<<<<<< HEAD
 
+=======
+
+        	
+         
+
+
+>>>>>>> ef2edb6d167b190aedd73e05ce515c54e63576bc
             function addToCart(product){
                 var product = {
                     name: ctrl.name,
