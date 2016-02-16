@@ -1,17 +1,25 @@
 'use strict';
 
-var app = angular.module('shopApp',['ui.router',]);
+var app = angular.module('shopApp',['ui.router','ui.bootstrap','ngAnimate']);
 
 app.config(function($stateProvider, $httpProvider,$urlRouterProvider){
 	
-	$urlRouterProvider.otherwise('/admin/dash');
+	$urlRouterProvider.otherwise('/');
 
 	$stateProvider
-	// .state('shop',{
-	// 	url:'/',
-	// 	templateUrl:'',
-	// 	controller:'',
-	// })
+
+  .state('home',{
+    url:'/',
+    templateUrl:'site/partials/shop-main.html',
+    controller: 'productCtrl as ctrl',
+    resolve: {
+      products: function(productSrv){
+        return productSrv.getProducts();
+      }
+    }
+    
+  })
+
 
   .state('admin',{
     url:'/admin',
@@ -19,28 +27,34 @@ app.config(function($stateProvider, $httpProvider,$urlRouterProvider){
     controller: 'AdminCtrl as ctrl',
     resolve: {
       products: function(productSrv){
-        console.log('/ is being hit')
         return productSrv.getProducts();
       }
     }
+    
   })
 
   .state('admin.dash',{
     url:'/dash',
     templateUrl:'site/partials/dash.html',
-    
     resolve: {
       products: function(productSrv){
-        console.log('dash')
         return productSrv.getProducts();
       }
     }
-    
   })
+
+
+    
+
   .state('admin.add_product',{
     url:'/add_product',
     templateUrl: 'site/partials/add_product.html',
     controller: 'productCtrl as ctrl',
+  })
+
+  .state('admin.edit',{
+    url:'/edit',
+    templateUrl:'site/partials/edit_product.html'
   })
  
 	$httpProvider.interceptors.push(function(){
@@ -57,4 +71,5 @@ app.config(function($stateProvider, $httpProvider,$urlRouterProvider){
            }
        }
    });
+
 });
