@@ -10,13 +10,23 @@
         	ctrl.productSrv=productSrv;
         	ctrl.api=api;
 
-        	var cart=[];
+        	ctrl.cart=[];
 
         	
-            function addToCard(product){
-                cart(ctrl.product.id, ctrl.product.quantity)
-            }
+         
 
+
+            function addToCart(product){
+                var product = {
+                    name: ctrl.name,
+                    description: ctrl.description,
+                    image: ctrl.image,
+                    category: ctrl.category,
+                    quantity: ctrl.quantity,
+                    price: ctrl.price
+                }
+            ctrl.cart.push(product);
         }
+
 
     })();
